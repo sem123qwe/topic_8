@@ -3,6 +3,7 @@ print("Добро пожаловать в игру \"Камень-Ножницы
 stone: str = "камень"
 paper: str = "бумага"
 scissors: str = "ножницы"
+
 rulse: list = [stone, paper, scissors]
 
 

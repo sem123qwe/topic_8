@@ -1,15 +1,15 @@
-user_input = int(input(""))
-number = 1
+user_input = int(input())
 
+number = user_input
 while True:
-    for num in range(1, user_input):
-        if (num % 2 != 0 and num % 3 != 0) % number == 0: 
-            print(num)
-        else:
-            num += 1
+    # Ищем наименьшее положительно
 
+    # которое делится на все числа от 1 до n без остатка
+    for num in range(1, user_input + 1):
+        # Если исходное число не делится на текущее num:
+            # Выходим из цикла, переходим к следующем числу
+        ...
+    else:
+        ...
 
-'''
-20 внешний цикл 
-проверка в внутренем цикле 
-'''
+    number += user_input
