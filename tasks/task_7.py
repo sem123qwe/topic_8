@@ -14,30 +14,31 @@ while True:
     user_choise_1: str = input(user_name_1 + ":")
     user_choise_2: str = input(user_name_2 + ":")
 
-    if user_choise_1 not in rulse:
+    if user_choise_1 not in rulse and user_choise_2 not in rulse:
+        print("ПРЕДУПРЕЖДЕНИЕ: Пожалуйста соблюдайте правила игры.")
+    elif user_choise_1 not in rulse:
         print("ПРЕДУПРЕЖДЕНИЕ:", user_name_1,
               ", соблюдайте правила игры.")
     elif user_choise_2 not in rulse:
         print("ПРЕДУПРЕЖДЕНИЕ:", user_name_2,
               ", соблюдайте правила игры.")
-    elif user_choise_1 not in rulse or user_choise_2 not in rulse:
-        print("ПРЕДУПРЕЖДЕНИЕ: Пожалуйста соблюдайте правила игры.")
 
     if user_choise_1 == user_choise_2:
         print("Ничья!")
 
+    congretulations = "Поздравляем! Победитель -congretulations"
     if user_choise_2 == stone and user_choise_1 == scissors:
-        print("Поздравляем! Победитель -", user_name_2, "!")
+        print(congretulations, user_name_2, "!")
     elif user_choise_2 == paper and user_choise_1 == stone:
-        print("Поздравляем! Победитель -", user_name_2, "!")
+        print(congretulations, user_name_2, "!")
     elif user_choise_2 == scissors and user_choise_1 == paper:
-        print("Поздравляем! Победитель -", user_name_2, "!")
+        print(congretulations, user_name_2, "!")
     elif user_choise_1 == stone and user_choise_2 == scissors:
-        print("Поздравляем! Победитель -", user_name_1, "!")
+        print(congretulations, user_name_1, "!")
     elif user_choise_1 == paper and user_choise_2 == stone:
-        print("Поздравляем! Победитель -", user_name_1, "!")
+        print(congretulations, user_name_1, "!")
     elif user_choise_1 == scissors and user_choise_2 == paper:
-        print("Поздравляем! Победитель -", user_name_1, "!")
+        print(congretulations, user_name_1, "!")
 
     last_question: str = input("Хотите сыграть еще раз? (да/нет): ")
 
@@ -45,6 +46,5 @@ while True:
         case "да":
             continue
         case "нет":
-            print("Досвидания!")
+            print("До встречи!")
             break
-        
