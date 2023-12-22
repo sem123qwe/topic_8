@@ -1,15 +1,20 @@
 user_input = int(input())
+# number = user_input
+# while True:
+#     for i in range(1, user_input + 1):
+#         if number % i != 0:
+#             print(number)
+#             break
 
-number = user_input
+#     number += user_input
+
+num_copy = user_input
 while True:
-    # Ищем наименьшее положительно
+    for i in range(1, user_input):
+        if num_copy % i != 0:
+            break
+        else:
+            print(num_copy)
+            break
 
-    # которое делится на все числа от 1 до n без остатка
-    for num in range(1, user_input + 1):
-        # Если исходное число не делится на текущее num:
-            # Выходим из цикла, переходим к следующем числу
-        ...
-    else:
-        ...
-
-    number += user_input
+    num_copy += user_input
