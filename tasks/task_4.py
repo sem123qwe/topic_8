@@ -9,5 +9,3 @@ else:
             break
     else:
         print("Число", user_input, "является простым")
-
-
